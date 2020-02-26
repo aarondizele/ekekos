@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ekekos.art | Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../dashboard.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="row no-gutters dashboard">
+        <div class="col-12 col-md-3 bg-black position-fixed" style="max-width: 300px;z-index:200;overflow-y:auto;">
+            <div class="p-4">
+                <img src="../assets/logo-white.png " alt="" style="width:70px!important; ">
+            </div>
+            <ul class="list-unstyled subheading my-4 my-categories">
+                <li class=""><span class="_flex"><i class="icon-profile mr-2 body-1"></i> Profil</span> <i class="fal fa-angle-right"></i></li>
+                <!-- <div class="opened">
+                    <li class="selected">Ma galerie</li>
+                    <li class="">Mon compte</li>
+                    <li class="">Mon abonnement</li>
+                    <li class="">Mes coordonnées bancaires</li>
+                    <li class="">Mes factures</li>
+                    <li class="">Mes avoirs</li>
+                    <li class="">Se déconnecter</li>
+                </div> -->
+                <li class=""><span class="_flex"><i class="icon-here mr-2 body-1"></i> Oeuvres</span> <i class="fal fa-angle-right"></i></li>
+                <!-- <div class="opened">
+                    <li class="_flex _between selected">Toutes les oeuvres <span class="badge badge-darken badge-pill">4</span></li>
+                    <li class="_flex _between">En attente d'approbation <span class="badge badge-darken badge-pill">1</span></li>
+                    <li class="_flex _between">Actives </li>
+                    <li class="_flex _between">Inactives</li>
+                    <li class="_flex _between">Rejetées </li>
+                    <li class="_flex _between">En cours de création <span class="badge badge-darken badge-pill">3</span></li>
+                </div> -->
+                <li class=""><span class="_flex"><i class="icon-user-star mr-2 body-1"></i> Artistes</span> <i class="fal fa-angle-right"></i></li>
+                <li class="opened active"><span class="_flex"><i class="icon-shipping mr-2 body-1"></i>
+                        Expositions</span> <i class="fal fa-angle-down"></i></li>
+                <div class="opened">
+                    <li class="_flex _between selected">Toutes les expositions <span class="badge badge-darken badge-pill">6</span></li>
+                    <li class="_flex _between">En attente d'approbation <span class="badge badge-darken badge-pill">2</span></li>
+                    <li class="_flex _between">Actives <span class="badge badge-darken badge-pill">6</span></li>
+                    <li class="_flex _between">Inactives</li>
+                    <li class="_flex _between">Rejetées <span class="badge badge-darken badge-pill">1</span></li>
+                    <li class="_flex _between">En cours de création <span class="badge badge-darken badge-pill">2</span>
+                    </li>
+                </div>
+                <li class=""><span class="_flex"><i class="icon-pack mr-2 body-1"></i> Commandes</span> <i class="fal fa-angle-right"></i></li>
+            </ul>
+        </div>
+        <div class="col-12 col-md-9 offset-md-3 dashboard-space">
+            <!-- Header -->
+            <section class="bg-dashboard px-5 py-3 _flex _between _wrap border-bottom">
+                <div>
+                    <div class="medium subheading">Bienvenue, Spirit Gallery</div>
+                    <div class="" style="color:#888">Une question ? Consultez notre <a href="#" class="underline">centre
+                            d'aide</a></div>
+                </div>
+                <div class=""><a href="" class="animated-underline">Voir ma galerie sur Ekekos</a> <span class="normal mx-1" style="color:#888">|</span> <i class="far fa-question-circle"></i> <a href="#" class="animated-underline">Aide</a>
+                </div>
+            </section>
+            <!-- Body -->
+            <section>
+                <div class="border-bottom">
+                    <div class="_flex _between py-4 px-6">
+                        <div>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb p-0 m-0 bg-transparent tiny">
+                                    <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Oeuvres</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Toutes les oeuvres</li>
+                                </ol>
+                            </nav>
+                            <h2 class="bold mt-2">Toutes les oeuvres</h2>
+                        </div>
+                        <button class="btn black"><i class="far fa-plus"></i> Nouvelle oeuvre</button>
+                    </div>
+
+                </div>
+                <!--  -->
+                <div class="py-8 px-6">
+                    <div class="form-group border _flex pr-3" style="max-width:320px;">
+                        <input type="text" class="form-control rounded-0 border-0 body-1" placeholder="Rechercher par nom d'oeuvre ou d'artiste">
+                        <i class="body-2 far fa-search"></i>
+                    </div>
+                    <!--  -->
+                    <div class="mt-6 texted italic">15 oeuvres</div>
+                    <!--  -->
+                    <div class="row mt-4">
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-6">
+                            <div class="card rounded-0 artists_follow_card artwork-card">
+                                <div class="">
+                                    <div class="_flex mb-3 caption texted">
+                                        <a class="_flex mr-2" data-toggle="tooltip" data-placement="top" title="L'oeuvre n'est dans aucun panier"><i class="far fa-shopping-bag mr-1"></i>0</a>
+                                        <a class="_flex" data-toggle="tooltip" data-placement="top" title="L'oeuvre n'est dans aucune wishlist"><i class="fas fa-heart mr-1"></i>0</a>
+                                    </div>
+                                    <div class="artists_follow_img_link">
+                                        <div style="background-image:url(https://d7hftxdivxxvm.cloudfront.net?resize_to=fill&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FMs2WrkDAKW7zZHZ4QCp6Gw%2Flarge.jpg)" class="artists_follow_img"></div>
+                                    </div>
+                                    <div class="mt-1">
+                                        <div class="bold m-0">Andy Warhol</div>
+                                        <div class="texted">
+                                            <div class="italic">test</div>
+                                            <div class="">100 x 100 x 5 Cm</div>
+                                            <div class="">Photographie</div>
+                                            <div class="my-1">1 examplaire en vente&nbsp;<i class="fas fa-pencil"></i></div>
+                                        </div>
+                                        <div class="subheading bold">1000 $&nbsp;<i class="fas fa-pencil"></i></div>
+                                        <div class="activated">Active</div>
+                                        <!--  -->
+                                        <div class="border-top mt-4 pt-3 _flex _around">
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Dupliquer"><i class="fal fa-copy"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Désactiver"><i class="far fa-ban"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Lancer la promotion"><i
+                                                    class="far fa-percent"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Masquer le prix"><i
+                                                    class="far fa-eye-slash"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Supprimer"><i class="far fa-trash"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-6">
+                            <div class="card rounded-0 artists_follow_card artwork-card">
+                                <div class="">
+                                    <div class="_flex mb-3 caption texted">
+                                        <div class="_flex mr-2"><i class="far fa-shopping-bag mr-1"></i>0</div>
+                                        <div class="_flex"><i class="fas fa-heart mr-1"></i>0</div>
+                                    </div>
+                                    <div class="artists_follow_img_link">
+                                        <div style="background-image:url(https://d7hftxdivxxvm.cloudfront.net?resize_to=fill&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FMs2WrkDAKW7zZHZ4QCp6Gw%2Flarge.jpg)" class="artists_follow_img"></div>
+                                    </div>
+                                    <div class="mt-1">
+                                        <div class="bold m-0">-</div>
+                                        <div class="texted">
+                                            <div class="italic">-</div>
+                                            <div class="">-</div>
+                                            <div class="">-</div>
+                                            <div class="my-1">1 examplaire en vente&nbsp;<i class="fas fa-pencil"></i></div>
+                                        </div>
+                                        <div class="subheading bold">1000 $&nbsp;<i class="fas fa-pencil"></i></div>
+                                        <div class="in_creation">En cours de création</div>
+                                        <!--  -->
+                                        <div class="border-top mt-4 pt-3 _flex _around">
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Dupliquer"><i class="fal fa-copy"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Désactiver"><i class="far fa-ban"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Lancer la promotion"><i
+                                                    class="far fa-percent"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Masquer le prix"><i
+                                                    class="far fa-eye-slash"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Supprimer"><i class="far fa-trash"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-6">
+                            <div class="card rounded-0 artists_follow_card artwork-card">
+                                <div class="">
+                                    <div class="_flex mb-3 caption texted">
+                                        <div class="_flex mr-2"><i class="far fa-shopping-bag mr-1"></i>0</div>
+                                        <div class="_flex"><i class="fas fa-heart mr-1"></i>0</div>
+                                    </div>
+                                    <div class="artists_follow_img_link">
+                                        <div style="background-image:url(https://d7hftxdivxxvm.cloudfront.net?resize_to=fill&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FMs2WrkDAKW7zZHZ4QCp6Gw%2Flarge.jpg)" class="artists_follow_img"></div>
+                                    </div>
+                                    <div class="mt-1">
+                                        <div class="bold m-0">Andy Warhol</div>
+                                        <div class="texted">
+                                            <div class="italic">test</div>
+                                            <div class="">100 x 100 x 5 Cm</div>
+                                            <div class="">Photographie</div>
+                                            <div class="my-1">1 examplaire en vente&nbsp;<i class="fas fa-pencil"></i></div>
+                                        </div>
+                                        <div class="subheading bold">1000 $&nbsp;<i class="fas fa-pencil"></i></div>
+                                        <div class="activated">Active</div>
+                                        <!--  -->
+                                        <div class="border-top mt-4 pt-3 _flex _around">
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Dupliquer"><i class="fal fa-copy"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Désactiver"><i class="far fa-ban"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Lancer la promotion"><i
+                                                    class="far fa-percent"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Masquer le prix"><i
+                                                    class="far fa-eye-slash"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Supprimer"><i class="far fa-trash"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-6">
+                            <div class="card rounded-0 artists_follow_card artwork-card">
+                                <div class="">
+                                    <div class="_flex mb-3 caption texted">
+                                        <div class="_flex mr-2"><i class="far fa-shopping-bag mr-1"></i>0</div>
+                                        <div class="_flex"><i class="fas fa-heart mr-1"></i>0</div>
+                                    </div>
+                                    <div class="artists_follow_img_link">
+                                        <div style="background-image:url(https://d7hftxdivxxvm.cloudfront.net?resize_to=fill&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FMs2WrkDAKW7zZHZ4QCp6Gw%2Flarge.jpg)" class="artists_follow_img"></div>
+                                    </div>
+                                    <div class="mt-1">
+                                        <div class="bold m-0">Andy Warhol</div>
+                                        <div class="texted">
+                                            <div class="italic">test</div>
+                                            <div class="">100 x 100 x 5 Cm</div>
+                                            <div class="">Photographie</div>
+                                            <div class="my-1">1 examplaire en vente&nbsp;<i class="fas fa-pencil"></i></div>
+                                        </div>
+                                        <div class="subheading bold">1000 $&nbsp;<i class="fas fa-pencil"></i></div>
+                                        <div class="activated">Active</div>
+                                        <!--  -->
+                                        <div class="border-top mt-4 pt-3 _flex _around">
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Dupliquer"><i class="fal fa-copy"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Désactiver"><i class="far fa-ban"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Lancer la promotion"><i
+                                                    class="far fa-percent"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Masquer le prix"><i
+                                                    class="far fa-eye-slash"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Supprimer"><i class="far fa-trash"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-6">
+                            <div class="card rounded-0 artists_follow_card artwork-card">
+                                <div class="">
+                                    <div class="_flex mb-3 caption texted">
+                                        <div class="_flex mr-2"><i class="far fa-shopping-bag mr-1"></i>0</div>
+                                        <div class="_flex"><i class="fas fa-heart mr-1"></i>0</div>
+                                    </div>
+                                    <div class="artists_follow_img_link">
+                                        <div style="background-image:url(https://d7hftxdivxxvm.cloudfront.net?resize_to=fill&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FMs2WrkDAKW7zZHZ4QCp6Gw%2Flarge.jpg)" class="artists_follow_img"></div>
+                                    </div>
+                                    <div class="mt-1">
+                                        <div class="bold m-0">Andy Warhol</div>
+                                        <div class="texted">
+                                            <div class="italic">test</div>
+                                            <div class="">100 x 100 x 5 Cm</div>
+                                            <div class="">Photographie</div>
+                                            <div class="my-1">1 examplaire en vente&nbsp;<i class="fas fa-pencil"></i></div>
+                                        </div>
+                                        <div class="subheading bold">1000 $&nbsp;<i class="fas fa-pencil"></i></div>
+                                        <div class="activated">Active</div>
+                                        <!--  -->
+                                        <div class="border-top mt-4 pt-3 _flex _around">
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Dupliquer"><i class="fal fa-copy"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Désactiver"><i class="far fa-ban"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Lancer la promotion"><i
+                                                    class="far fa-percent"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Masquer le prix"><i
+                                                    class="far fa-eye-slash"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Supprimer"><i class="far fa-trash"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-6">
+                            <div class="card rounded-0 artists_follow_card artwork-card">
+                                <div class="">
+                                    <div class="_flex mb-3 caption texted">
+                                        <div class="_flex mr-2"><i class="far fa-shopping-bag mr-1"></i>0</div>
+                                        <div class="_flex"><i class="fas fa-heart mr-1"></i>0</div>
+                                    </div>
+                                    <div class="artists_follow_img_link">
+                                        <div style="background-image:url(https://d7hftxdivxxvm.cloudfront.net?resize_to=fill&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FMs2WrkDAKW7zZHZ4QCp6Gw%2Flarge.jpg)" class="artists_follow_img"></div>
+                                    </div>
+                                    <div class="mt-1">
+                                        <div class="bold m-0">Andy Warhol</div>
+                                        <div class="texted">
+                                            <div class="italic">test</div>
+                                            <div class="">100 x 100 x 5 Cm</div>
+                                            <div class="">Photographie</div>
+                                            <div class="my-1">1 examplaire en vente&nbsp;<i class="fas fa-pencil"></i></div>
+                                        </div>
+                                        <div class="subheading bold">1000 $&nbsp;<i class="fas fa-pencil"></i></div>
+                                        <div class="activated">Active</div>
+                                        <!--  -->
+                                        <div class="border-top mt-4 pt-3 _flex _around">
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Dupliquer"><i class="fal fa-copy"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Désactiver"><i class="far fa-ban"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Lancer la promotion"><i class="far fa-percent"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Masquer le prix"><i class="far fa-eye-slash"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Supprimer"><i class="far fa-trash"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="../js/slick.min.js"></script>
+
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+
+</html>

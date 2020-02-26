@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ekekos.art | Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../dashboard.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="row no-gutters dashboard">
+        <div class="col-12 col-md-3 bg-black position-fixed" style="max-width: 300px;z-index:200;overflow-y:auto;">
+            <div class="p-4">
+                <img src="../assets/logo-white.png " alt="" style="width:70px!important; ">
+            </div>
+            <ul class="list-unstyled subheading my-4 my-categories">
+                <li class="opened active">
+                    <span class="_flex">
+                        <i class="icon-profile mr-2 body-1"></i> Profil
+                    </span>
+                    <i class="fal fa-angle-down"></i>
+                </li>
+                <div class="opened">
+                    <li class="selected">Ma galerie</li>
+                    <li class="">Mon compte</li>
+                    <li class="">Mon abonnement</li>
+                    <li class="">Mes coordonnées bancaires</li>
+                    <li class="">Mes factures</li>
+                    <li class="">Mes avoirs</li>
+                    <li class="">Se déconnecter</li>
+                </div>
+                <li class=""><span class="_flex"><i class="icon-here mr-2 body-1"></i> Oeuvres</span> <i class="fal fa-angle-right"></i></li>
+                <!-- <div class="opened">
+                    <li class="_flex _between selected">Toutes les oeuvres <span class="badge badge-darken badge-pill">4</span></li>
+                    <li class="_flex _between">En attente d'approbation <span class="badge badge-darken badge-pill">1</span></li>
+                    <li class="_flex _between">Actives </li>
+                    <li class="_flex _between">Inactives</li>
+                    <li class="_flex _between">Rejetées </li>
+                    <li class="_flex _between">En cours de création <span class="badge badge-darken badge-pill">3</span></li>
+                </div> -->
+                <li class=""><span class="_flex"><i class="icon-user-star mr-2 body-1"></i> Artistes</span> <i class="fal fa-angle-right"></i></li>
+                <li class=""><span class="_flex"><i class="icon-shipping mr-2 body-1"></i>
+                        Expositions</span> <i class="fal fa-angle-right"></i></li>
+                <!-- <div class="opened">
+                    <li class="_flex _between selected">Toutes les expositions <span
+                            class="badge badge-darken badge-pill">6</span></li>
+                    <li class="_flex _between">En attente d'approbation <span
+                            class="badge badge-darken badge-pill">2</span></li>
+                    <li class="_flex _between">Actives <span class="badge badge-darken badge-pill">6</span></li>
+                    <li class="_flex _between">Inactives</li>
+                    <li class="_flex _between">Rejetées <span class="badge badge-darken badge-pill">1</span></li>
+                    <li class="_flex _between">En cours de création <span class="badge badge-darken badge-pill">2</span>
+                    </li>
+                </div> -->
+                <li class=""><span class="_flex"><i class="icon-pack mr-2 body-1"></i> Commandes</span> <i class="fal fa-angle-right"></i></li>
+            </ul>
+        </div>
+        <div class="col-12 col-md-9 offset-md-3 dashboard-space">
+            <!-- Header -->
+            <section class="bg-dashboard px-5 py-3 _flex _between _wrap border-bottom">
+                <div>
+                    <div class="medium subheading">Bienvenue, Spirit Gallery</div>
+                    <div class="" style="color:#888">Une question ? Consultez notre <a href="#" class="underline">centre
+                            d'aide</a></div>
+                </div>
+                <div class=""><a href="">Voir ma galerie sur Ekekos</a> <span class="normal mx-1" style="color:#888">|</span> <i class="far fa-question-circle"></i> Aide
+                </div>
+            </section>
+            <!-- Body -->
+            <section>
+                <div class="border-bottom">
+                    <div class="_flex _between py-4 px-6">
+                        <div>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb p-0 m-0 bg-transparent tiny">
+                                    <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Oeuvres</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Nouvelle oeuvre</li>
+                                </ol>
+                            </nav>
+                            <h2 class="bold mt-2">Nouvelle oeuvre</h2>
+                        </div>
+                    </div>
+
+                </div>
+                <!--  -->
+                <div class="py-8 px-6">
+                    <!--  -->
+                    <div class="h5 bold text-uppercase">Information sur l'artiste</div>
+                    <div class="form-group border _flex my-6" style="max-width:400px;">
+                        <input type="text" class="form-control rounded-0 border-0 body-1" placeholder="Rechercher un artiste">
+                    </div>
+                    <!--  -->
+                    <div class="py-10 mt-15 border-top">
+                        <div class="h5 bold text-uppercase mb-7">Photos de l'oeuvre</div>
+                        <!--  -->
+                        <div class="row">
+                            <div class="col-12 col-md-8">
+                                <ul class="text-muted body-1 ml-5" style="list-style:initial;max-width: 600px;">
+                                    <li>Photo principale : oeuvre détourée - Photos n°2, 3, 4, 5 : oeuvres en situation, détails de l'oeuvre, signature, etc.</li>
+                                    <li>2 images obligatoires sauf pour les éditions et pour les photographies.</li>
+                                    <li>Privilégiez les images en format JPG ou JPEG.</li>
+                                    <li>La taille de vos images doit être inférieur à 10 Mo.</li>
+                                    <li>Vos images doivent faire au moins 500ox sur un des deux côtés.</li>
+                                </ul>
+                                <!--  -->
+                                <div class="row mt-8">
+                                    <div class="col-12 col-md-6">
+                                        <div class="image_box image_box_main">
+                                            <div>Photo principale</div>
+                                            <div class="mt-2 normal"><i class="icon-follow"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="image_box">
+                                                    <div>Photo n°2</div>
+                                                    <div class="mt-2 normal"><i class="icon-follow"></i></div>
+                                                </div>
+                                                <div class="image_box">
+                                                    <div>Photo n°4</div>
+                                                    <div class="mt-2 normal"><i class="icon-follow"></i></div>
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <div class="col-6">
+                                                <div class="image_box">
+                                                    <div>Photo n°3</div>
+                                                    <div class="mt-2 normal"><i class="icon-follow"></i></div>
+                                                </div>
+                                                <div class="image_box">
+                                                    <div>Photo n°5</div>
+                                                    <div class="mt-2 normal"><i class="icon-follow"></i></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Info sur l'oeuvre -->
+                    <div class="py-10 my-8 border-top">
+                        <div class="h4 bold mb-7">Informations générales</div>
+                        <div class="row no-gutters">
+                            <div class="col-12 col-lg-9">
+                                <!--  -->
+                                <div class="form-row">
+                                    <div class="col-12 col-md-8">
+                                        <div class="form-group">
+                                            <label for="name">Nom de l'oeuvre <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control rounded-0">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-group">
+                                            <label for="name">Année de réalisation <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control rounded-0">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="form-row">
+                                    <div class="col-12 col-md-4 form-group">
+                                        <label for="name">Catégorie <span class="text-danger">*</span></label><br>
+                                        <select class="custom-select rounded-0" style="max-width:300px;">
+                                            <option value="" selected>Choisissez une catégorie</option>
+                                            <option value="dessin">Dessin</option>
+                                            <option value="dessin">Edition</option>
+                                            <option value="dessin">Peinture</option>
+                                            <option value="dessin">Photographie</option>
+                                            <option value="dessin">Sculpture</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-md-4 form-group">
+                                        <label for="name">Médium <span class="text-danger">*</span></label><br>
+                                        <select class="custom-select rounded-0" style="max-width:300px;">
+                                            <option value="" selected>Choisissez un médium</option>
+                                            <option value="dessin">acier</option>
+                                            <option value="dessin">acrylique</option>
+                                            <option value="dessin">aluminium</option>
+                                            <option value="dessin">animal</option>
+                                            <option value="dessin">aquarelle</option>
+                                            <option value="dessin">aquatinte</option>
+                                            <option value="dessin">ardoise</option>
+                                            <option value="dessin">huile</option>
+                                            <option value="dessin">pastel à l'huile</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-md-4 form-group">
+                                        <label for="name">Support <span class="text-danger">*</span></label><br>
+                                        <select class="custom-select rounded-0" style="max-width:300px;">
+                                            <option value="" selected>Choisissez un support</option>
+                                            <option value="dessin">Dessin</option>
+                                            <option value="dessin">Edition</option>
+                                            <option value="dessin">Peinture</option>
+                                            <option value="dessin">Photographie</option>
+                                            <option value="dessin">Sculpture</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="form-row">
+                                    <div class="col-12 col-md-6 col-lg-9 form-group">
+                                        <label for="name">Dimension de l'oeuvre <span class="text-danger">*</span></label><br>
+                                        <div class="_flex">
+                                            <input type="text" class="form-control rounded-0" style="width:120px;" placeholder="Hauteur">
+                                            <!--  -->
+                                            <div class="mx-1">x</div>
+                                            <!--  -->
+                                            <input type="text" class="form-control rounded-0" style="width:120px;" placeholder="Largeur">
+                                            <!--  -->
+                                            <div class="mx-1">x</div>
+                                            <!--  -->
+                                            <input type="text" class="form-control rounded-0 mr-1" style="width:120px;" placeholder="Épaisseur">
+                                            <!--  -->
+                                            <select class="custom-select rounded-0" style="max-width:80px;">
+                                                <option value="Cm" selected>Cm</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="col-12 col-md-6 col-lg-3 form-group">
+                                        <label for="name">Poids de l'oeuvre <span class="text-danger">*</span></label><br>
+                                        <!--  -->
+                                        <div class="_flex">
+                                            <!--  -->
+                                            <input type="text" class="form-control rounded-0 mr-1" style="width:120px;" placeholder="Épaisseur">
+                                            <!--  -->
+                                            <select class="custom-select rounded-0" style="max-width:120px;">
+                                                <option value="Kg" selected>Kg</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="form-row">
+                                    <div class="col-12 col-md-6 col-lg-4 form-group">
+                                        <label for="name"><i class="fa fa-info-circle"></i>&nbsp;Prix public ? <span class="text-danger">*</span></label><br>
+                                        <div class="_flex">
+                                            <div class="custom-control custom-radio mr-3">
+                                                <input type="radio" name="radio-stacked" id="non" class="custom-control-input" required>
+                                                <label for="non" class="custom-control-label">Non</label>
+                                            </div>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" name="radio-stacked" id="oui" class="custom-control-input" required>
+                                                <label for="oui" class="custom-control-label">Oui</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-8 form-group">
+                                        <label for="name">Prix de l'oeuvre <span class="text-danger">*</span></label><br>
+                                        <!--  -->
+                                        <div class="_flex">
+                                            <!--  -->
+                                            <input type="text" class="form-control rounded-0 mr-1" style="width:120px;" placeholder="">
+                                            <!--  -->
+                                            <select class="custom-select rounded-0" style="max-width:80px;">
+                                                <option value="$" selected>$</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+
+                        <div class="h4 bold my-7">Tirage et authenticité</div>
+                        <div class="row no-gutters">
+                            <div class="col-12">
+                                <!--  -->
+                                <div class="form-row">
+                                    <div class="col-12 col-md-6 col-lg-3">
+                                        <div class="form-group">
+                                            <label for="name">L'oeuvre est-elle unique ? <span class="text-danger">*</span></label><br>
+                                            <div class="_flex">
+                                                <div class="custom-control custom-radio mr-3">
+                                                    <input type="radio" name="radio-stacked" id="non" class="custom-control-input" required>
+                                                    <label for="non" class="custom-control-label">Non</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" name="radio-stacked" id="oui" class="custom-control-input" required>
+                                                    <label for="oui" class="custom-control-label">Oui</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="col-12 col-md-6 col-lg-3">
+                                        <div class="form-group">
+                                            <label for="name">Édition limitée et numérotée ? <span
+                                                    class="text-danger">*</span></label><br>
+                                            <div class="_flex">
+                                                <div class="custom-control custom-radio mr-3" data-toggle="tooltip" data-placement="top" title="Nous n'acceptions que des oeuvres à édition limitée et numérotée">
+                                                    <input type="radio" name="radio-stacked" id="non" class="custom-control-input" required>
+                                                    <label for="non" class="custom-control-label">Non</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" name="radio-stacked" id="oui" class="custom-control-input" required>
+                                                    <label for="oui" class="custom-control-label">Oui</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="col-12 col-md-6 col-lg-3">
+                                        <div class="form-group">
+                                            <label for="name">Nombre d'exemplaires total <span
+                                                    class="text-danger">*</span></label><br>
+                                            <input type="number" class="form-control rounded-0">
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="col-12 col-md-6 col-lg-3">
+                                        <div class="form-group">
+                                            <label for="name">Nombre d'exemplaires disponibles <span class="text-danger">*</span></label><br>
+                                            <input type="number" class="form-control rounded-0">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="form-group texted">
+                                    <label for="name">Type de signature <span class="text-danger">*</span></label><br>
+                                    <select class="custom-select rounded-0" style="max-width:300px;">
+                                        <option value="" selected>Choisissez un type de signature</option>
+                                        <option value="">Non Signée</option>
+                                        <option value="">Oeuvre signée à la main</option>
+                                    </select>
+                                </div>
+                                <!--  -->
+                                <div class="form-group texted">
+                                    <label for="name">Type de certificat <span class="text-danger">*</span></label><br>
+                                    <select class="custom-select rounded-0" style="max-width:300px;">
+                                        <option value="" selected>Choisissez un type de signature</option>
+                                        <option value="">Pas de certificat</option>
+                                        <option value="">Certificat de l'artiste</option>
+                                        <option value="">Certificat de la galerie</option>
+                                    </select>
+                                </div>
+                                <!--  -->
+                                <div class="h4 bold my-7">Encadrement</div>
+                                <!--  -->
+                                <div class="form-row">
+                                    <div class="col-12 col-md-5 col-lg-3 form-group">
+                                        <label for="name" class="texted">Oeuvre encadrée <span class="text-danger">*</span></label><br>
+                                        <div class="_flex">
+                                            <div class="custom-control custom-radio mr-3">
+                                                <input type="radio" name="radio-stacked" id="non" class="custom-control-input" required>
+                                                <label for="non" class="custom-control-label">Non</label>
+                                            </div>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" name="radio-stacked" id="oui" class="custom-control-input" required>
+                                                <label for="oui" class="custom-control-label">Oui</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="col-12 col-md-5 col-lg-5 form-group">
+                                        <label for="name">Type d'encadrement <span class="text-danger">*</span></label><br>
+                                        <select class="custom-select rounded-0" style="max-width:300px;">
+                                            <option value="" selected>Choisissez un type d'encadrement</option>
+                                            <option value="">Pas de certificat</option>
+                                            <option value="">Certificat de l'artiste</option>
+                                            <option value="">Certificat de la galerie</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <!--  -->
+                                <div class="form-row">
+                                    <div class="col-12 col-md-6 col-lg-3 form-group">
+                                        <label for="name">Matière de l'encadrement <span class="text-danger">*</span></label><br>
+                                        <select class="custom-select rounded-0" style="max-width:300px;">
+                                            <option value="" selected>Choisissez une matière</option>
+                                            <option value="">Pas de certificat</option>
+                                            <option value="">Certificat de l'artiste</option>
+                                            <option value="">Certificat de la galerie</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3 form-group">
+                                        <label for="name">Couleur de l'encadrement <span class="text-danger">*</span></label><br>
+                                        <select class="custom-select rounded-0" style="max-width:300px;">
+                                            <option value="" selected>Choisissez une couleur</option>
+                                            <option value="">Pas de certificat</option>
+                                            <option value="">Certificat de l'artiste</option>
+                                            <option value="">Certificat de la galerie</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-lg-6 form-group">
+                                        <label for="name">Dimension de l'encadrement <span class="text-danger">*</span></label><br>
+                                        <div class="_flex">
+                                            <input type="text" class="form-control rounded-0" style="width:120px;" placeholder="Hauteur">
+                                            <!--  -->
+                                            <div class="mx-1">x</div>
+                                            <!--  -->
+                                            <input type="text" class="form-control rounded-0" style="width:120px;" placeholder="Largeur">
+                                            <!--  -->
+                                            <div class="mx-1">x</div>
+                                            <!--  -->
+                                            <input type="text" class="form-control rounded-0 mr-1" style="width:120px;" placeholder="Épaisseur">
+                                            <!--  -->
+                                            <select class="custom-select rounded-0" style="max-width:80px;">
+                                                <option value="Cm" selected>Cm</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  -->
+                        <div class="h5 bold my-5 text-uppercase">Présentation de l'oeuvre</div>
+                        <!--  -->
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-7">
+                                <div class="form-group">
+                                    <div class="_flex mb-2">
+                                        <button class="btn-langue btn black btn-follow py-0 body-1 mr-1">FR</button>
+                                        <button class="btn-langue btn btn-follow btn-outline-dark black-outline py-0 body-1">EN</button>
+                                    </div>
+                                    <textarea name="" id="" cols="10" rows="10" class="form-control rounded-0"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="py-10 mt-8 border-top">
+                            <div class="h5 bold mb-7 text-uppercase">Délais de livraison et provenance</div>
+                            <!--  -->
+                            <div class="form-row">
+                                <div class="col-12 col-md-6 col-lg-4 form-group texted">
+                                    <label for="name">Délais de livraison</label><br>
+                                    <select class="custom-select rounded-0" style="max-width:300px;">
+                                        <option value="" selected>Choisissez un délais de livraison</option>
+                                        <option value="">Moins d'une semaine</option>
+                                        <option value="">Une à deux semaines</option>
+                                        <option value="">Deux à trois semaines</option>
+                                        <option value="">Trois à quatre semaines</option>
+                                        <option value="">Quatre à cinq semaines</option>
+                                        <option value="">Cinq à six semaines</option>
+                                        <option value="">Un mois et demi</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 form-group texted">
+                                    <label for="name">Dans quel pays se trouve l'oeuvre<br>
+                                    <select class="custom-select rounded-0" style="max-width:300px;">
+                                        <option value="" selected>Choisissez un pays</option>
+                                        <option value="">Non Signée</option>
+                                        <option value="">Oeuvre signée à la main</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="my-4 title bold">Frais de livraison</div>
+                            <!--  -->
+                            <div class="form-row">
+                                <div class="col-12 col-md-6 col-lg-3 form-group">
+                                    <label for="">Domestique</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend rounded-0"><span class="input-group-text rounded-0">$</span></div>
+                                        <input type="text" class="form-control rounded-0">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 form-group">
+                                    <label for="">Zone 1&nbsp;<i class="fa fa-info-circle"></i></label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend rounded-0"><span class="input-group-text rounded-0">$</span></div>
+                                        <input type="text" class="form-control rounded-0">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 form-group">
+                                    <label for="">Zone 2&nbsp;<i class="fa fa-info-circle"></i></label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend rounded-0"><span class="input-group-text rounded-0">$</span></div>
+                                        <input type="text" class="form-control rounded-0">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 form-group">
+                                    <label for="">Zone 3&nbsp;<i class="fa fa-info-circle"></i></label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend rounded-0"><span class="input-group-text rounded-0">$</span></div>
+                                        <input type="text" class="form-control rounded-0">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="h5 bold my-5 text-uppercase">Information du retrait</div>
+                            <div class="form-row">
+                                <div class="col-12 col-md-5 col-lg-4 form-group">
+                                    <label for="name" class="texted">Possibilité de retrait en galerie ?</label><br>
+                                    <div class="_flex">
+                                        <div class="custom-control custom-radio mr-3">
+                                            <input type="radio" name="radio-stacked" id="non" class="custom-control-input" required>
+                                            <label for="non" class="custom-control-label">Non</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" name="radio-stacked" id="oui" class="custom-control-input" required>
+                                            <label for="oui" class="custom-control-label">Oui</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 col-lg-5 form-group">
+                                    <label for="name">Adresse de retrait<br>
+                                    <select class="custom-select rounded-0">
+                                        <option value="" selected>Choisissez une adresse de retrait</option>
+                                        <option value="">Non Signée</option>
+                                        <option value="">Oeuvre signée à la main</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+            <!-- Footer -->
+            <section class="_flex _between dashboard-footer">
+                <button class="btn black-outline btn-follow py-0 medium mr-3">Annuler</button>
+                <div class="_flex _end">
+                    <button class="btn black-outline btn-follow py-0 medium mr-3">Sauvegarder et quitter</button>
+                    <button class="btn black btn-follow py-0 medium">Soumettre l'oeuvre</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="../js/slick.min.js"></script>
+
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+
+</html>

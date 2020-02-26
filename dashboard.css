@@ -1,0 +1,167 @@
+input,
+textarea,
+select,
+.input-group-text {
+    font-size: 14px!important;
+}
+
+label {
+    color: #666!important;
+    /* font-weight: 500!important; */
+}
+
+.dashboard {
+    height: 100vh;
+}
+
+.dashboard .position-fixed {
+    height: 100%;
+}
+
+.dashboard .my-categories li {
+    /* margin-bottom: 20px; */
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg-dashboard {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 22.2%;
+    background-color: #F3F3F3;
+    z-index: 2000!important;
+}
+
+.dashboard-footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 22.2%;
+    background-color: #fff;
+    z-index: 2000!important;
+    border-top: 1px solid #e5e5e5;
+    padding: 12px 30px;
+}
+
+.badge-darken {
+    background-color: #323232;
+    color: white;
+    font-size: 11px;
+}
+
+.dashboard .my-categories li i {
+    font-size: 18px;
+}
+
+.dashboard-space {
+    margin-top: 70px;
+}
+
+.dashboard .artwork-card {
+    width: 100%!important;
+    min-height: 280px!important;
+}
+
+.dashboard .artists_follow_img_link {
+    height: 160px!important;
+}
+
+.dashboard .opened {
+    background-color: #202020;
+    color: white;
+}
+
+.dashboard .opened li {
+    font-size: 13px;
+}
+
+.dashboard .selected {
+    position: relative;
+    font-weight: bold;
+    border-top: 1px solid rgba(48, 47, 47, 0.4);
+    border-bottom: 1px solid rgba(48, 47, 47, 0.4);
+}
+
+.dashboard .selected:before {
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    position: absolute;
+    background-color: white;
+}
+
+.dashboard .opened .active {
+    font-size: 16px;
+}
+
+.in_creation,
+.activated,
+.rejected,
+.waiting {
+    font-weight: 500;
+    font-size: 12.5px;
+    margin-top: 6px;
+}
+
+.in_creation {
+    color: #73ADBC;
+}
+
+.activated {
+    color: #3F9F70;
+}
+
+.rejected {
+    color: #F97263;
+}
+
+.waiting {
+    color: #FEB962;
+}
+
+.image_box {
+    width: 100%;
+    height: 140px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 2px solid #e5e5e5;
+}
+
+.image_box_main {
+    height: 300px;
+}
+
+.image_box i {
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.btn-langue {
+    height: 30px!important;
+    line-height: 30px!important;
+    width: 35px!important;
+    padding: 0!important;
+    text-align: center!important;
+}
+
+@media (min-width: 768px) {
+    .offset-md-3 {
+        margin-left: 22%;
+    }
+    .col-md-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 78%;
+        max-width: 100%;
+    }
+}

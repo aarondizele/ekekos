@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ekekos.art | Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../dashboard.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="row no-gutters dashboard">
+        <div class="col-12 col-md-3 bg-black position-fixed" style="max-width: 300px;z-index:200;overflow-y:auto;">
+            <div class="p-4">
+                <img src="../assets/logo-white.png " alt="" style="width:70px!important; ">
+            </div>
+            <ul class="list-unstyled subheading my-4 my-categories">
+                <li class="opened active">
+                    <span class="_flex">
+                        <i class="icon-profile mr-2 body-1"></i> Profil
+                    </span>
+                    <i class="fal fa-angle-down"></i>
+                </li>
+                <div class="opened">
+                    <li class="selected">Ma galerie</li>
+                    <li class="">Mon compte</li>
+                    <li class="">Mon abonnement</li>
+                    <li class="">Mes coordonnées bancaires</li>
+                    <li class="">Mes factures</li>
+                    <li class="">Mes avoirs</li>
+                    <li class="">Se déconnecter</li>
+                </div>
+                <li class=""><span class="_flex"><i class="icon-here mr-2 body-1"></i> Oeuvres</span> <i class="fal fa-angle-right"></i></li>
+                <!-- <div class="opened">
+                    <li class="_flex _between selected">Toutes les oeuvres <span class="badge badge-darken badge-pill">4</span></li>
+                    <li class="_flex _between">En attente d'approbation <span class="badge badge-darken badge-pill">1</span></li>
+                    <li class="_flex _between">Actives </li>
+                    <li class="_flex _between">Inactives</li>
+                    <li class="_flex _between">Rejetées </li>
+                    <li class="_flex _between">En cours de création <span class="badge badge-darken badge-pill">3</span></li>
+                </div> -->
+                <li class=""><span class="_flex"><i class="icon-user-star mr-2 body-1"></i> Artistes</span> <i class="fal fa-angle-right"></i></li>
+                <li class=""><span class="_flex"><i class="icon-shipping mr-2 body-1"></i>
+                        Expositions</span> <i class="fal fa-angle-right"></i></li>
+                <!-- <div class="opened">
+                    <li class="_flex _between selected">Toutes les expositions <span
+                            class="badge badge-darken badge-pill">6</span></li>
+                    <li class="_flex _between">En attente d'approbation <span
+                            class="badge badge-darken badge-pill">2</span></li>
+                    <li class="_flex _between">Actives <span class="badge badge-darken badge-pill">6</span></li>
+                    <li class="_flex _between">Inactives</li>
+                    <li class="_flex _between">Rejetées <span class="badge badge-darken badge-pill">1</span></li>
+                    <li class="_flex _between">En cours de création <span class="badge badge-darken badge-pill">2</span>
+                    </li>
+                </div> -->
+                <li class=""><span class="_flex"><i class="icon-pack mr-2 body-1"></i> Commandes</span> <i class="fal fa-angle-right"></i></li>
+            </ul>
+        </div>
+        <div class="col-12 col-md-9 offset-md-3 dashboard-space">
+            <!-- Header -->
+            <section class="bg-dashboard px-5 py-3 _flex _between _wrap border-bottom">
+                <div>
+                    <div class="medium subheading">Bienvenue, Spirit Gallery</div>
+                    <div class="" style="color:#888">Une question ? Consultez notre <a href="#" class="underline">centre
+                            d'aide</a></div>
+                </div>
+                <div class=""><a href="">Voir ma galerie sur Ekekos</a> <span class="normal mx-1" style="color:#888">|</span> <i class="far fa-question-circle"></i> Aide
+                </div>
+            </section>
+            <!-- Body -->
+            <section>
+                <div class="border-bottom">
+                    <div class="_flex _between py-4 px-6">
+                        <div>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb p-0 m-0 bg-transparent tiny">
+                                    <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Profil</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Ma galerie</li>
+                                </ol>
+                            </nav>
+                            <h2 class="bold mt-2">Ma galerie</h2>
+                        </div>
+                    </div>
+
+                </div>
+                <!--  -->
+                <div class="py-8 px-6">
+                    <!--  -->
+                    <div class="h5 bold">Informations générales</div>
+                    <!--  -->
+                    <div class="row mt-4">
+                        <div class="col-12 col-md-6 col-lg-5">
+                            <div class="form-group">
+                                <label for="name">Nom de la galerie <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control rounded-0">
+                            </div>
+                            <div class="form-row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="name">Ville <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control rounded-0">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="name">Pays <span class="text-danger">*</span></label>
+                                        <select class="custom-select rounded-0">
+                                            <option value="Angleterre">Angleterre</option>
+                                            <option value="Congo (RDC)" selected>Congo (RDC)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Photo de couverture</label>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="col-12 col-md-6 col-lg-7">
+                            <div class="form-group">
+                                <label for="">Description</label>
+                                <div class="_flex mb-2">
+                                    <button class="btn black btn-follow py-0 body-1 mr-1">FR</button>
+                                    <button class="btn btn-outline-dark btn-follow py-0 body-1">EN</button>
+                                </div>
+                                <textarea name="" id="" cols="10" rows="10" class="form-control rounded-0"></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer -->
+            <section class="_flex _end dashboard-footer">
+                <button class="btn black btn-follow py-0 medium">Sauvegarder</button>
+            </section>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="../js/slick.min.js"></script>
+    </script>
+</body>
+
+</html>

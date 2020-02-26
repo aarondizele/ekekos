@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ekekos.art | Vente d'Œuvres d'Art Africain et Contemporain en Ligne</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- <script src="app.js"></script> -->
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="header-shadow ">
+        <!-- Top navbar -->
+        <nav class="d-none d-lg-flex navbar border-bottom _flex _wrap _between py-0">
+            <!-- Left side -->
+            <ul class="navbar-nav _flex">
+                <li class="nav-item top_separator">
+                    <a href="" class="nav-link">FR</a>
+                </li>
+                <li class="nav-item top_separator">
+                    <a href="" class="nav-link">$ USD</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Besoin d'aide?</a>
+                </li>
+            </ul>
+            <!-- Right side -->
+            <ul class="navbar-nav _flex">
+                <li class="nav-item top_separator">
+                    <i class="icon-news title mr-1"></i>
+                    <a href="" class="nav-link mr-4 header_promo">
+                        <p class="m-0">Inscrivez-vous à notre email &<br><span class="pink">Obtenez 10% de
+                                réduction</span></p>
+                    </a>
+                </li>
+                <li class="nav-item top_separator">
+                    <a data-toggle="modal" data-target="#signModal" class="nav-link mr-4 _flex c-pointer">
+                        <i class="icon-profile mr-2 body-1"></i> S'inscrire / Se connecter</a>
+                </li>
+                <li class="nav-item top_separator">
+                    <a href="" class="nav-link mr-4 _flex">
+                        <i class="icon-profile mr-2 body-1"></i> Mon compte</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link mr-4"><i class="icon-wishlist body-1"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link"><i class="icon-cart body-1"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Middle navbar -->
+        <nav class="d-none d-lg-flex navbar navbar-expand-lg navbar-light bg-white subheading medium" id="navbar">
+            <a class="navbar-brand bold" href="#">
+                <img src="assets/logo.png" alt="" class="" style="width:62px!important;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Left side -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item w-100">
+                        <input type="text" class="medium text-muted text-center border-0" placeholder="Entrez: Artiste, oeuvre, galerie ou mot-clé ..." style="min-width:400px;font-size:18px;">
+                    </li>
+                </ul>
+                <!-- Right side -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link body-1 _flex" href="#">
+                            <i class="icon-exit mr-1 bold" style="font-size:12px;"></i> Fermer
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <nav class="d-block d-lg-none navbar navbar-light bg-white subheading medium">
+            <div class="_flex _between">
+                <div class="_flex">
+                    <a href="" class="mr-5">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </a>
+                    <a href="" class=""><i class="icon-search mr-1 title bold"></i></a>
+                </div>
+                <div class="_flex">
+                    <a class="navbar-brand bold" href="#">Ekekos</a>
+                </div>
+                <div class="_flex">
+                    <a href="" class="nav-link"><i class="icon-cart title normal"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Sidebar -->
+    <div class="modal fade" id="signModal" tabindex="-1" role="dialog" aria-labelledby="signModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content rounded-0 px-5-md px-8-lg">
+                <div class="modal-header pt-8 border-bottom-0">
+                    <ul class="_flex h4 bold">
+                        <li><a href="" class="mr-3 artists_follow_link artists_follow_link_active no-hover">Inscription</a>
+                        </li>
+                        <li><a href="" class="mx-3 text-muted no-hover">Connexion</a></li>
+                    </ul>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="medium">Bienvenue chez Ekekos.art!</div>
+                    <p class="">Découvrez et achetez en ligne le meilleur de l'art africain et contemporain.</p>
+                    <div class="form-group login-group mt-8 mb-2">
+                        <label for="">Adresse email</label>
+                        <input type="text" class="form-control rounded-0">
+                    </div>
+                    <div class="form-group login-group mb-2">
+                        <label for="">Mot de passe</label>
+                        <input type="text" class="form-control rounded-0">
+                    </div>
+                    <button class="btn btn-follow btn-block black mb-4 mt-2 py-0">Créer un compte</button>
+                    <p class="caption italic">En vous inscrivant, vous acceptez nos <a href="" class="underline">termes
+                            et conditions</a> ansi que notre <a href="" class="underline">politique de confidentialité
+                            et cookies</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <section class="border-bottom">
+        <div class="py-10 py-15-md py-20-lg container">
+            <div class="row">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-6 offset-md-1 offset-lg-2 offset-xl-3 text-center">
+                    <h4 class="bold">Les recherches les plus populaires</h4>
+                    <div class="_flex _wrap _center my-5">
+                        <div class="suggestion_box">JonOne</div>
+                        <div class="suggestion_box">Shepard Obey Fairey</div>
+                        <div class="suggestion_box">Phillippe Pasqua</div>
+                        <div class="suggestion_box">Abstrait</div>
+                        <div class="suggestion_box">Noir et blanc</div>
+                        <div class="suggestion_box">Sculpture bronze</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container pt-20 pb-10" id="howto">
+            <div class="d-flex flex-column align-items-center text-center">
+                <h4>Comment ça marche?</h4>
+                <div class="row mt-10 mb-2">
+                    <div class="col-12 col-md-4">
+                        <i class="icon-search"></i>
+                        <h6 class="mt-3">Sélection</h6>
+                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <i class="icon-screen"></i>
+                        <h6 class="mt-3">Mise en ligne</h6>
+                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <i class="icon-pack"></i>
+                        <h6 class="mt-3">Commande</h6>
+                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <a href="" class=""><u>En savoir plus</u></a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+
+    <footer class="bg-black">
+        <div class="container pt-10 pb-5">
+            <!--  -->
+            <div class="row pt-3">
+                <div class="col-6 col-lg-3 mb-6">
+                    <ul class="list-unstyled">
+                        <li class="list-element"><a href="" class="">À propos d'Ekekos.art</a></li>
+                        <!-- <li class="list-element"><a href="" class="">Guide du collectionneur</a></li> -->
+                        <li class="list-element"><a href="" class="">Comment ça marche</a></li>
+                        <li class="list-element"><a href="" class="">Contactez-nous</a></li>
+                        <li class="list-element"><a href="" class="">Conditions générales d'utilisation</a></li>
+                        <li class="list-element"><a href="" class="">Conditions générales de ventes</a></li>
+                        <li class="list-element"><a href="" class="">Mentions légales</a></li>
+                        <li class="list-element"><a href="" class="">Charte de confidentialité et cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3 mb-6">
+                    <ul class="list-unstyled">
+                        <li class="list-element"><a href="" class="">Œuvres</a></li>
+                        <li class="list-element footer_link"><a href="" class="">Peinture</a></li>
+                        <li class="list-element footer_link"><a href="" class="">Sculpture</a></li>
+                        <li class="list-element footer_link"><a href="" class="">Photographie</a></li>
+                        <li class="list-element footer_link"><a href="" class="">Edition</a></li>
+                        <li class="list-element footer_link"><a href="" class="">Dessin</a></li>
+                        <li class="list-element footer_link"><a href="" class="">Tableaux</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3 mb-6">
+                    <ul class="list-unstyled">
+                        <li class="list-element"><a href="" class="">Artistes</a></li>
+                        <li class="list-element"><a href="" class="">Galeries</a></li>
+                        <li class="list-element"><a href="" class="">Collections</a></li>
+                        <li class="list-element"><a href="" class="">Expositions</a></li>
+                        <li class="list-element"><a href="" class="">Magazine</a></li>
+                        <li class="list-element d-block d-lg-none">
+                            <div class="footer_box">
+                                <h6 class="">Galeries</h6>
+                                <p class="mb-4 footer_link body-1">Vous souhaitez exposer sur Ekekos.art?</p>
+                                <a href="/" class="bold body-2">Remplissez votre dossier</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <ul class="list-unstyled">
+                        <li class="list-element"><a href="" class="">Mon comote</a></li>
+                        <li class="list-element footer_link"><a href="" class="">Mes informations</a></li>
+                        <li class="list-element footer_link"><a href="" class="">Mes adresses</a></li>
+                        <li class="list-element footer_link"><a href="" class="">Mes commandes</a></li>
+                        <li class="list-element d-none d-lg-block">
+                            <div class="footer_box">
+                                <h6 class="">Galeries</h6>
+                                <p class="mb-4 footer_link body-1">Vous souhaitez exposer sur Ekekos.art?</p>
+                                <a href="/" class="bold body-2">Remplissez votre dossier</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--  -->
+            <hr class="bg-white">
+            <!--  -->
+            <div class="_flex _wrap _between w-100 pt-3">
+                <div class="">
+                    <div class="_flex align-items-start">
+                        <div class="display-3 normal mr-10">
+                            <img src="assets/logo-white.png" alt="" class="text-white" style="width:110px!important;">
+                        </div>
+                        <div>
+                            <p class="m-0 mb-3">Suivre <span class="medium">Ekekos.art</span></p>
+                            <div class="_flex title">
+                                <a href=""><i class="fab fa-facebook mr-4"></i></a>
+                                <a href=""><i class="fab fa-twitter mr-4"></i></a>
+                                <a href=""><i class="fab fa-pinterest mr-4"></i></a>
+                                <a href=""><i class="fab fa-instagram mr-4"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="body-2 mb-2">S'abonner à la Newsletter</div>
+                    <div class="_flex border pr-3">
+                        <input type="text" placeholder="Votre adresse email" class="form-control bg-transparent border-0 body-1 py-0 rounded-0">
+                        <a class="c-pointer"><i class="fal fa-angle-right" style="font-size:30px;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center caption px-10-md px-20-lg mb-0 mt-4 footer_link">
+                <span class="medium">Ekekos.art</span> est une place de marché dédiée à la vente d'œuvres d'art africain et contemporain en ligne. Galeries d'art, exposez vos œuvres sur Internet avec <span class="medium">Ekekos.art</span>. Amateurs d'art,
+                concrétisez votre achat de tableau contemporain, de photo d'art ou encore de sculpture contemporaine à travers des milliers d'œuvres d'art en ligne, issues d'artistes contemporains rigoureusement sélectionnés !
+            </p>
+        </div>
+    </footer>
+    <!-- Scroll Button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+    <script>
+        // When the user scrolls the page, execute myFunction 
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+
+
+        // When the user scrolls down 20px from the top of the document, show the button
+
+        function scrollFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+
+            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+
+</html>
